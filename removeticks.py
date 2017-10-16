@@ -9,7 +9,12 @@ import numpy as np
 #r = t+1 # impulse response
 #print(r)
 fig = plt.figure()
-ax = plt.subplot2grid((1,1),(0, 0))
+ax = fig.add_subplot(1, 2, 1)
+# 只有在构造时把yticks设置为空才能隐藏y轴刻度及数字，而set_yticks是没用的，原因不明
+ax1 = plt.subplot2grid((1,2),(0, 1),yticks=[])
+#ax1.set_xticks([])
 ax.spines['left'].set_visible(False)
+ax1.spines['left'].set_visible(False)
+ax1.spines['right'].set_visible(False)
 ax.set_xticks([])
 plt.show()
