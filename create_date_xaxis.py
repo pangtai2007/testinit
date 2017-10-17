@@ -28,24 +28,13 @@ for i in range(10):
     date_l.append(date)
     #print(date)
 
-fig = plt.figure()
-ax = plt.subplot2grid((1,1),(0, 0), xticks=[], yticks=[])
-ax.set_aspect(1)
 
-ax.spines['left'].set_visible(False)
-ax.spines['right'].set_visible(False)
-ax.spines['top'].set_visible(False)
-ax.spines['bottom'].set_visible(False)
-ax.set_xlim(-100,100)
+#for i in range(-3,3):
+#    ax.plot((15*i,15*i),(0,1))
+#    plt.text(15*i-off, -5, date_l[i+3],rotation=45)
 
-off=2
-for i in range(-3,3):
-    ax.plot((15*i,15*i),(0,1))
-    plt.text(15*i-off, -5, date_l[i+3],rotation=45)
-
-ax.plot((-200,200),(0,0))
 #ax.plot((0,0),(-100,100))
-ax.plot((-100,100),(-100,100))
+#ax.plot((-100,100),(-100,100))
 #ax.set_title('A date xaxis')
 
 #ax.set_aspect(1)
