@@ -1,3 +1,4 @@
+# -- coding: utf-8 --
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -53,18 +54,19 @@ class DraggableRectangle:
 
 fig = plt.figure()
 ax = fig.add_subplot(111)
-#rects = ax.bar(range(10), 20*np.random.rand(10))
-#drs = []
-#for rect in rects:
-#    dr = DraggableRectangle(rect)
-#    dr.connect()
-#    drs.append(dr)
-
-rect1 = ax.plot(np.random.rand(10))
+rects = ax.bar(range(10), 20*np.random.rand(10))
 drs = []
-for rect in rect1:
+for rect in rects:
     dr = DraggableRectangle(rect)
     dr.connect()
     drs.append(dr)
+#ax.set_xlim(0.5,2.5)
+#ax.set_ylim(0.5,2.5)
+#line = ax.plot((1,2), (1,2), color='black')
+
+#dr = DraggableRectangle(line)
+#dr.connect()
+
+
 
 plt.show()
