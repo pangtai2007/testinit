@@ -5,7 +5,7 @@
 import numpy as np
 from matplotlib.path import Path
 from matplotlib.patches import PathPatch
-import trade_toolkits.visual.plot2
+import trade_toolkits.visual.plot3
 #import trade_toolkits.environments.market_db as md
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -16,7 +16,7 @@ import random
 if __name__ == '__main__':
     #candlestick_plot = trade_toolkits.visual.plot.CandlestickPlot("trade_toolkits/data/14_incontinuous.csv", "trade_toolkits/data/trader.csv")
     #candlestick_plot.plot()
-    candlestick_plot = trade_toolkits.visual.plot2.CandlestickPlot("trade_toolkits/data/13_incontinuous.csv", "trade_toolkits/data/trader.csv")
+    candlestick_plot = trade_toolkits.visual.plot3.CandlestickPlot("trade_toolkits/data/13_incontinuous.csv", "trade_toolkits/data/trader.csv")
     candlestick_plot.plot()
 
 

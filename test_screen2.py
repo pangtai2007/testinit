@@ -25,8 +25,10 @@ class myaxis:
         for xline in line1:
             # 不同对象获取坐标的方法不一样
             if type(xline)==matplotlib.lines.Line2D:
+                #print(xline.get_xydata())
                 x1 = xline.get_xydata()[:, 0]
                 y1 = xline.get_xydata()[:, 1]
+                print(x1, y1)
                 #press1 = x1, y1, event.xdata, event.ydata
                 press1.append([x1, y1, event.xdata, event.ydata])
             elif type(xline)==matplotlib.text.Text:
