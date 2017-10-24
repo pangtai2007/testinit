@@ -16,7 +16,7 @@ import random
 if __name__ == '__main__':
     #candlestick_plot = trade_toolkits.visual.plot.CandlestickPlot("trade_toolkits/data/14_incontinuous.csv", "trade_toolkits/data/trader.csv")
     #candlestick_plot.plot()
-    candlestick_plot = trade_toolkits.visual.plot3.CandlestickPlot("trade_toolkits/data/13_incontinuous.csv", "trade_toolkits/data/trader.csv")
+    candlestick_plot = trade_toolkits.visual.plot3.CandlestickPlot("trade_toolkits/data/14_incontinuous.csv", "trade_toolkits/data/trader.csv")
     candlestick_plot.plot()
 
 
